@@ -135,31 +135,50 @@ body {
   height: 100%;
   width: 80%;
   margin: auto;
+  font-family: arial, sans-serif;
 }
 body {
   height: 100%;
   width: auto;
-}
-nav {
-  display: flex;
-  justify-content: space-evenly;
+  margin: 1em auto;
+  max-width: 50em;
 }
 header {
   margin: 30px;
   padding: 10px;
+  font-family: arial, sans-serif;
   background-color: salmon;
+  height: 10%;
 }
-a {
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: bold;
+  font-family: arial, sans-serif;
+}
+header nav a {
+  text-decoration: none;
   color: black;
-  text-transform: capitalize;
+  text-transform: none;
 }
 #first-sec {
   margin: 30px;
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
+}
+#first-sec h1 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: larger;
+}
+hr {
+  margin: 30px;
 }
 #table {
   margin: 30px;
+}
+#table h1 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: larger;
 }
 table {
   font-family: arial, sans-serif;
@@ -179,16 +198,34 @@ h1 {
   font-family: arial, sans-serif;
   border-collapse: collapse;
 }
-#third-sec ul {
-  margin: 30px;
+ul {
   list-style-type: square;
+  margin: 50px;
+}
+li {
+  margin-bottom: 5px;
+}
+a {
+  text-decoration: none;
+  color: teal;
+}
+h1 {
+  margin: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: larger;
+}
+h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: larger;
+  margin: 30px;
 }
 #footer {
-  color: white;
-  width: ;
-  height: 5%;
-  clear: both;
-  background-color: #554040;
+  margin: 30px;
+  padding: 10px;
+  font-family: arial, sans-serif;
+  background-color: salmon;
 }
 .Furno {
   text-align: center;

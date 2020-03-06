@@ -58,6 +58,7 @@ table {
 	height:100%;
 	width: 80%;
 	margin: auto;
+	font-family: arial, sans-serif;
     
 }
 body {
@@ -71,38 +72,62 @@ body {
 
 
 
-nav{
-	display: flex;
-	justify-content: space-evenly;
-	font-weight: bold;
-	
-}
-header{
+// nav{
+// 	display: flex;
+// 	justify-content: space-evenly;
+// 	font-weight: bold;
+@primary-color:salmon; 
+// this is a variable
+.body-margin(){
 	margin: 30px;
 	padding: 10px;
-	background-color: salmon;
+	font-family: arial, sans-serif;
+ } 
+ .font-sizing(){
+	font-weight: bold;
+	margin-bottom: 10px;
+	font-size: larger;
+ }
+//  this is mixin
+	
+header{
+	.body-margin();
+	// margin: 30px;
+	// padding: 10px;
+	background-color:@primary-color;
+	height:10%;
+	nav{
+		display: flex;
+		justify-content: space-evenly;
+		font-weight: bold;
+		font-family: arial, sans-serif;
+		
 
-
+		
+		a{
+			text-decoration: none;
+			color: black;
+			text-transform:none;
+      
+	   }
 }
-a{
-	color: black;
-	text-transform:capitalize;
 }
 #first-sec{
 	margin: 30px;
-	font-family: arial, sans-serif;
-	border-collapse: collapse;
-	
-	
-	
-	
+	h1{
+		.font-sizing()
+		
+	}
 }
-h1{
-	margin-bottom: 10px;
-	
+hr{
+	margin: 30px;   // didnt know we could resize hr. 
 }
+
 #table{
 	margin: 30px;
+	h1{
+		.font-sizing()
+	}
 }
 table {
 	font-family: arial, sans-serif;
@@ -124,19 +149,33 @@ table {
 	border-collapse: collapse;
 	
   }
-  #third-sec ul{
-	  margin: 30px;
-	  list-style-type: square;
-
+   ul{
+		list-style-type: square;
+		margin: 50px;
+		}
+		li{
+			margin-bottom: 5px;
+		}
+		a{
+			text-decoration: none;
+			color: teal;
+		}
+	h1{
+		margin: 30px;
+		.font-sizing();
+	}
 	  
-  }
-  #footer{
-	color:white;
-    
-    height:20%;
+	h2{
+		.font-sizing();
+		margin: 30px
+	}
   
-    clear:both;
-    background-color:rgb(85, 64, 64);
+  #footer{
+	.body-margin();
+	// height:10%;
+	background-color: @primary-color;
+  
+    
   }
   .Furno{
 	  text-align: center;
